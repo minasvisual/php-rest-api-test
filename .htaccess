@@ -1,0 +1,14 @@
+
+RewriteEngine on
+Options -Indexes
+
+# Use PHP56
+<IfModule mod_suphp.c>
+    AddHandler application/x-httpd-php71 .php
+   suPHP_ConfigPath /home/manto638/php.ini  
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

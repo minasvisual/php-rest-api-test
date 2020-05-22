@@ -1,0 +1,12 @@
+{
+    "name": "manto638/testphp",
+    "authors": [
+        {
+            "name": "Ulisses",
+            "email": "mantovaniarts@hotmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}
