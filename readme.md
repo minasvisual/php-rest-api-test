@@ -18,6 +18,7 @@ POST /login (autenticar com um usuário)
 Body:
 - email *
 - password *
+
 Response:
 - token
 - iduser
@@ -31,14 +32,16 @@ Response:
 - name
 - email
 - drink_counter
+
 Headers: Auhtorization: <login token>
 
 GET /users/ (obter a lista de usuários)
-Response: Array: 
+Response Array:
 - iduser
 - name
 - email
 - drink_counter
+
 Headers: Auhtorization: <login token>
 
 PUT /users/:iduser (editar o seu próprio usuário)
@@ -46,19 +49,23 @@ Body:
 - email
 - name
 - password
+
 Headers: Auhtorization: <login token>
 
 DELETE /users/:iduser (apagar o seu próprio usuário)
 Response:
 - OK
+
 Headers: Auhtorization: <login token>
 
 POST /users/:iduser/drink (incrementar o contador de quantas vezes bebeu água)
 Body:
 - drink_ml (int) 
+
 Respoonse:
 - iduser
 - email
 - name
 - drink_counter
+
 Headers: Auhtorization: <login token>
