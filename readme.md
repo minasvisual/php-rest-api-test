@@ -8,13 +8,13 @@
 - Access localhost/path/of/app/folder/
 
 # api
-POST /users/ (criar um novo usuário) 
+### POST /users/ (criar um novo usuário) 
 Body:
 - name *
 - email *
 - password *
 
-POST /login (autenticar com um usuário)
+### POST /login (autenticar com um usuário)
 Body:
 - email *
 - password *
@@ -26,7 +26,7 @@ Response:
 - name
 - drink_counter
 
-GET /users/:iduser (obter um usuário)
+### GET /users/:iduser (obter um usuário)
 Response:
 - iduser
 - name
@@ -35,7 +35,7 @@ Response:
 
 Headers: Auhtorization: <login token>
 
-GET /users/ (obter a lista de usuários)
+### GET /users/ (obter a lista de usuários)
 Response Array:
 - iduser
 - name
@@ -44,7 +44,7 @@ Response Array:
 
 Headers: Auhtorization: <login token>
 
-PUT /users/:iduser (editar o seu próprio usuário)
+### PUT /users/:iduser (editar o seu próprio usuário)
 Body:
 - email
 - name
@@ -52,13 +52,13 @@ Body:
 
 Headers: Auhtorization: <login token>
 
-DELETE /users/:iduser (apagar o seu próprio usuário)
+### DELETE /users/:iduser (apagar o seu próprio usuário)
 Response:
 - OK
 
 Headers: Auhtorization: <login token>
 
-POST /users/:iduser/drink (incrementar o contador de quantas vezes bebeu água)
+### POST /users/:iduser/drink (incrementar o contador de quantas vezes bebeu água)
 Body:
 - drink_ml (int) 
 
